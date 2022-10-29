@@ -1,0 +1,3 @@
+schneller suchen
+beim umbennen wird auch die sicherungsdatei und einstellungsdatei umbenannt, falls vorhanden
+bei prüfung, ob profil bereits vorhanden ist, lowcase

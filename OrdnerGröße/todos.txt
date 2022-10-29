@@ -1,0 +1,37 @@
+leere ordner prüfen nach löschen einer datei
+leere ordner löschen auch ohne md5 prüfung
+
+
+
+- gemeinsame nach anzahl der pfade sortieren
+- gemeinsame, nachträglich noch ignorierte Pfade erweitern
+- nach gemeinsame geschlossen, hängt sich bei vielen entfernen auf
+- ordnerbaum datei/ordner anzeigen
+- sicherung speichen und laden unter namen
+- ändern zu "datei selektieren"
+- bei vielen dateien (z.b. 2400) dauert es, wenn item entfernt wird aus listbox
+0.6) option direkt durchzuskippen mit großen fenster, in dem man die dateien vergleichen kann und entscheiden, welche behalten werden sollen
+0.8) Nach löschen (zb in top100) wird tree nicht aktualisiert
+1) Dateien werden im Baum nicht richtig angezeigt (D:\Studium\WS2020\Microcontroller)
+1.2) - mehrere Dateine aus top100 löschen
+1.3) - aktualisieren eigener thread
+1.4) - listenlabel während noch lädt (zb. wird top100 immer wieder unten aufgeführt) (initial kennzeichnen)
+1.5) - ordner öffnen bei treeview
+2) - listbox erst aktualisieren komplett, wenn tab geschlossen ist
+2.1) - Datei wird gelöscht nachricht (wenns zb bei 12gb dauert und eigener thread)
+2.5) - zeit berechnen für md5 für mehree größen, dann im verhältnis zu vergleichswerten restzeit durchrechnen
+3) - gemeinsame ordner halten sich auch an ignoriere pfade
+- vergleiche zwei pfade, wo gleiche dateien vorkommen und entscheide, wo diese behalten werden sollen
+- im zweifel entscheide dich für entsprechenden ordnerpfad (passe liste an danach)
+- mache die letzte entscheidung rückgängig (auch wenn mehrere gelöscht wurden)
+- spaltengröße anpassen, gemeinsame ordner
+- nach gemeinsame ordner nicht richtig aktualisiert
+- gemeinsame ordner auch bei selbem Ordner klare trennung
+- slebe größe checkbox mit namenähnlichkeit
+
+- was machen, wenn die verzeichnisnamen zu lang sind?
+- lookup table über datei id mit dateiname
+
+D:\Musik\Toplieder
+D:\Musik\Ipod Musik
+D:\Musik\Citylauf

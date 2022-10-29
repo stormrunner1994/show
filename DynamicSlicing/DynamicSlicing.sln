@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicSlicing", "DynamicSlicing\DynamicSlicing.csproj", "{CF22014F-4246-4394-B706-3F9720D31E76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF22014F-4246-4394-B706-3F9720D31E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF22014F-4246-4394-B706-3F9720D31E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF22014F-4246-4394-B706-3F9720D31E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF22014F-4246-4394-B706-3F9720D31E76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB557688-8053-4C46-92B4-6E52FD89F2E0}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+begin
+	z = 20;
+	x = 5;
+	read(y);
+	read(t);
+	while (y < 5) do
+		begin
+			y = y * 2;
+			z = z - (y + x);
+		end;
+	od;
+	if (x > t) then
+		begin
+			x = t * x;
+			while(z < 0) do
+				begin
+					t = t + 20;
+					z = t + y;
+				end;
+			od;
+			t = x * 10 + z;
+		end;
+	else
+		begin
+			x = e + z;
+		end;
+	fi;
+	write(x);
+	write(t);
+end;

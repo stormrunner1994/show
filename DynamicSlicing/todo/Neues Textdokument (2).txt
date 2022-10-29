@@ -1,0 +1,5 @@
+-endlosschleifen
+-buttons, die nicht gedrückt werden dürfen, deaktivieren
+-datei einlesen und valide prüfen, gute fehlermeldung
+- v=u ohne leerzeichen wird falsch eingelesen
+-datagrid only readable

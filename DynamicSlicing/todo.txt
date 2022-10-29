@@ -1,0 +1,20 @@
+﻿Form der Dokumente, Titel, autor, email, matrikelnummer, typ (Bachelorarbeit)
+
+
+Bisher:
+Einführende Worte:
+Warum C# und .Net?
+Warum nicht MacOS?
+Implementierte Klassen
+Fazit
+
+
+Überlegung
+1. Zusammenfassung
+2.1 Ausgangslage
+2.2 Motivation (bisher keine software dafür gefunden)
+2.5 Zielsetzung (Windowsforms, statt wpf)
+3. 
+
+
+Entwicklungsumgebung

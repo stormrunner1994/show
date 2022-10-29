@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BAD246E4-2CB0-4EAA-9F36-BF8B9723B1FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Background</RootNamespace>
+    <AssemblyName>Background</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Apis, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.41.1\lib\net45\Google.Apis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.41.1\lib\net45\Google.Apis.Auth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.41.1\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.41.1\lib\net45\Google.Apis.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v3, Version=1.41.1.1722, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Drive.v3.1.41.1.1722\lib\net45\Google.Apis.Drive.v3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.41.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.41.1\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IronXL, Version=2019.5.2.0, Culture=neutral, PublicKeyToken=0f5804b6690bad1e, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronXL.Excel.2019.5.2\lib\net45\IronXL.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassGoogleDrive.cs" />
+    <Compile Include="ClassÜbergreifend.cs" />
+    <Compile Include="ExcelReader.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAufgabenliste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAufgabenliste.Designer.cs">
+      <DependentUpon>FormAufgabenliste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMissonen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMissonen.Designer.cs">
+      <DependentUpon>FormMissonen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTmx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTmx.Designer.cs">
+      <DependentUpon>FormTmx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAktuelleDateien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAktuelleDateien.Designer.cs">
+      <DependentUpon>FormAktuelleDateien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAufgaben.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAufgaben.Designer.cs">
+      <DependentUpon>FormAufgaben.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDateien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDateien.Designer.cs">
+      <DependentUpon>FormDateien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEinstellungen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEinstellungen.Designer.cs">
+      <DependentUpon>FormEinstellungen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormErinnerung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormErinnerung.Designer.cs">
+      <DependentUpon>FormErinnerung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGoogleDrive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGoogleDrive.Designer.cs">
+      <DependentUpon>FormGoogleDrive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMusik.Designer.cs">
+      <DependentUpon>FormMusik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPCModusÄndern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPCModusÄndern.Designer.cs">
+      <DependentUpon>FormPCModusÄndern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShortcuts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShortcuts.Designer.cs">
+      <DependentUpon>FormShortcuts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTermine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTermine.Designer.cs">
+      <DependentUpon>FormTermine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTimer.Designer.cs">
+      <DependentUpon>FormTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTimerDatei.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTimerDatei.Designer.cs">
+      <DependentUpon>FormTimerDatei.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWiederholung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWiederholung.Designer.cs">
+      <DependentUpon>FormWiederholung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Missionen.cs" />
+    <Compile Include="MissionenAnpassen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MissionenAnpassen.Designer.cs">
+      <DependentUpon>MissionenAnpassen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Termin.cs" />
+    <Compile Include="TrackMania.cs" />
+    <Compile Include="Windows.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAktuelleDateien.resx">
+      <DependentUpon>FormAktuelleDateien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAufgaben.resx">
+      <DependentUpon>FormAufgaben.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAufgabenliste.resx">
+      <DependentUpon>FormAufgabenliste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDateien.resx">
+      <DependentUpon>FormDateien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEinstellungen.resx">
+      <DependentUpon>FormEinstellungen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormErinnerung.resx">
+      <DependentUpon>FormErinnerung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGoogleDrive.resx">
+      <DependentUpon>FormGoogleDrive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMissonen.resx">
+      <DependentUpon>FormMissonen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMusik.resx">
+      <DependentUpon>FormMusik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPCModusÄndern.resx">
+      <DependentUpon>FormPCModusÄndern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShortcuts.resx">
+      <DependentUpon>FormShortcuts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTermine.resx">
+      <DependentUpon>FormTermine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimer.resx">
+      <DependentUpon>FormTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimerDatei.resx">
+      <DependentUpon>FormTimerDatei.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formtmx.resx">
+      <DependentUpon>FormTmx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWiederholung.resx">
+      <DependentUpon>FormWiederholung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissionenAnpassen.resx">
+      <DependentUpon>MissionenAnpassen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AxInterop.WMPLib.dll" />
+    <Content Include="Resources\control_start.png" />
+    <Content Include="Resources\Interop.WMPLib.dll" />
+    <None Include="Resources\control_start1.png" />
+    <Content Include="Resources\control_stop.png" />
+    <None Include="Resources\control_stop1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

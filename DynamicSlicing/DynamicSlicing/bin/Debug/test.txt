@@ -1,0 +1,16 @@
+begin
+	z = 0;
+	t = b;
+	if (x > b) then
+		begin
+		x = x - b;
+		end
+	fi
+	while (x <= t) do
+		begin
+		t = t - x;
+		z = t + 1;
+		end
+	od
+	write(z);
+end

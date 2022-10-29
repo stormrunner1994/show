@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF22014F-4246-4394-B706-3F9720D31E76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DynamicSlicing</RootNamespace>
+    <AssemblyName>DynamicSlicing</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arrow.cs" />
+    <Compile Include="ClassArrowFeld.cs" />
+    <Compile Include="ClassCheckCode.cs" />
+    <Compile Include="ClassDependencies.cs" />
+    <Compile Include="ClassExecutionTrace.cs" />
+    <Compile Include="ClassOperation.cs" />
+    <Compile Include="ClassSlice.cs" />
+    <Compile Include="CodeZeigen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeZeigen.Designer.cs">
+      <DependentUpon>CodeZeigen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicSlicing.cs" />
+    <Compile Include="Ebene.cs" />
+    <Compile Include="Ergebnis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ergebnis.Designer.cs">
+      <DependentUpon>Ergebnis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ETZeile.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCode.Designer.cs">
+      <DependentUpon>FormCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formformular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formformular.Designer.cs">
+      <DependentUpon>Formformular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHowTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHowTo.Designer.cs">
+      <DependentUpon>FormHowTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CodeZeigen.resx">
+      <DependentUpon>CodeZeigen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ergebnis.resx">
+      <DependentUpon>Ergebnis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCode.resx">
+      <DependentUpon>FormCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formformular.resx">
+      <DependentUpon>Formformular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHowTo.resx">
+      <DependentUpon>FormHowTo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ergebnis.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crierion.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

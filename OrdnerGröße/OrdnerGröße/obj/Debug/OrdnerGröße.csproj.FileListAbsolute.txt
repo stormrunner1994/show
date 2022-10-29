@@ -1,0 +1,10 @@
+C:\Users\StormRunner\Desktop\OrdnerGröße\OrdnerGröße\bin\Debug\OrdnerGröße.exe.config
+C:\Users\StormRunner\Desktop\OrdnerGröße\OrdnerGröße\bin\Debug\OrdnerGröße.exe
+C:\Users\StormRunner\Desktop\OrdnerGröße\OrdnerGröße\bin\Debug\OrdnerGröße.pdb
+C:\Users\StormRunner\Desktop\OrdnerGröße\OrdnerGröße\obj\Debug\OrdnerGröße.Form1.resources
+C:\Users\StormRunner\Desktop\OrdnerGröße\OrdnerGröße\obj\Debug\OrdnerGröße.Properties.Resources.resources
+C:\Users\StormRunner\Desktop\OrdnerGröße\OrdnerGröße\obj\Debug\OrdnerGröße.csproj.GenerateResource.Cache
+C:\Users\StormRunner\Desktop\OrdnerGröße\OrdnerGröße\obj\Debug\OrdnerGröße.exe
+C:\Users\StormRunner\Desktop\OrdnerGröße\OrdnerGröße\obj\Debug\OrdnerGröße.pdb
+C:\Users\StormRunner\Desktop\OrdnerGröße\OrdnerGröße\obj\Debug\OrdnerGröße.FormDuplikate.resources
+C:\Users\StormRunner\Desktop\OrdnerGröße\OrdnerGröße\obj\Debug\OrdnerGröße.csprojResolveAssemblyReference.cache
